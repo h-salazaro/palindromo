@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+
+require 'Palindromo'
+
+class Checker
+  def capture(string)
+    string == string.reverse
+  end
+end
+
+checker = Checker.new
+
+print "Palabra: "
+checker.capture(gets.chomp)
